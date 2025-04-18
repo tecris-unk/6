@@ -35,6 +35,8 @@ int pop_back(Deque* deque);
 int pop_front(Deque* deque);
 void showDeque(Deque* deque);
 
+int isSame(Queue* queue1, Queue* queue2);
+
 void createAndShowQueue();
 void createAndShowDeque();
 void FindSameQueues();

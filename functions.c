@@ -282,3 +282,18 @@ int showToFirstNegativeInDeque(Deque* deque)
     printf("\n");
     return last;
 }
+
+int isSame(Queue* queue1, Queue* queue2)
+{
+    if(sizeQueue(queue1) != sizeQueue(queue2)){return 0;}
+    Node* temp1 = queue1->back;
+    Node* temp2 = queue2->back;
+
+    while(temp1!=NULL)
+    {
+        if(temp1->data != temp2->data){return 0;}
+        temp1 = temp1->next;
+        temp2 = temp2->next;
+    }
+    return 1;
+}
